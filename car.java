@@ -43,5 +43,25 @@ class  CarDemo
 		c.color="blue";
 		c.run();
 		
+		Car d=new Car();
+		show (d);
+
+		//show(Car d);
+		//new Car(); 1.匿名对象 
+		//new Car().run();当对象 对方法  仅进行 一次调用 的时候，就可以简化成匿名对象。
+		//new Car().color="green";
+		//2.匿名对象可以作为时间参数进行传递 
+		new Car().num=5;
+		show (new Car());
+		show (c);
+
+
+	}
+	//汽车改装厂
+	public static void show(Car d)
+	{
+		d.num=3;
+		d.color="red";
+		System.out.println(d.num+"..."+d.color);
 	}
 }
